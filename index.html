@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <title>WanderMap</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 </head>
 
 <body>
-	
-<img src="resources/mapprint.png" alt="Map of Nieuwmarkt" />
-<img src="resources/icons/dewaag.png" alt="De Waag" class="icon" />
-<img src="resources/icons/hooy.jpeg" alt="Hooy" class="icon" />
-<img src="resources/icons/namkee.png" alt="Nam Kee"class="icon" />
-<img src="resources/icons/vincentkaas.png" alt="Vincent Kaas"class="icon" />
 
+<div id="card">
+	<div class="front">
+		<img src="resources/mapprint.png" alt="Map of Nieuwmarkt" />
+		<img src="resources/icons/dewaag.png" alt="De Waag" class="icon" />
+		<img src="resources/icons/hooy.jpeg" alt="Hooy" class="icon" />
+		<img src="resources/icons/namkee.png" alt="Nam Kee" class="icon" />
+		<img src="resources/icons/vincentkaas.png" alt="Vincent Kaas"class="icon" />
+	</div>
+	<div class="back">
+	   SKATA
+	</div>
+</div>
+
+<a id="flip" href="">CLICK HERE</a>
+<script type="text/javascript">
+$( "#flip" ).click(function() {
+	$("#card").flip();
+}
+);
+</script>
 </body>
 </html>
