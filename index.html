@@ -24,13 +24,14 @@
 
 <a id="flip" href="">CLICK HERE</a>
 <script type="text/javascript">
-$("#card").flip({
-  trigger: 'manual'
+$( document ).ready(function() {
+	$("#card").flip({
+  		trigger: 'manual'
+	});
 });
 $( "#flip" ).click(function() {
-	$("#card").flip(true);
-}
-);
+	$("#card").flip('toggle');
+});
 </script>
 </body>
 </html>
