@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+	<div class="image"></div>
+	<div class="header"></div>
+	<div class="opening-times"></div>
+	<div class="infos"></div>
+	<div class="blurb"></div>
+</div>
+<script>
+$(function () {
+	if (click0) {
+		$('.image').html('<img src="' + images[0] + '" />');
+		$('.header').html(headers[0]);
+		$('.opening-times').html(openings[0]);
+		$('.blurb').html(blurbs[0]);
+	}
+
+	var images = {
+		'nam_kee': 'https://lh3.google.com/u/0/d/0B1abhvS3Tw1hbXltLWt6YWFPd00=w2430-h1310-iv1',
+		'vincent': 'https://lh3.google.com/u/0/d/0B1abhvS3Tw1haVVfZkI3cFVnTzQ=w2430-h1310-iv1',
+		'jacob': 'https://lh3.google.com/u/0/d/0B8ZtUwTFS1gnTkhKeEdLbW5CbFk=w2430-h1310-iv1',
+		'he_hua': 'https://lh3.google.com/u/0/d/0B8ZtUwTFS1gnTkhKeEdLbW5CbFk=w2430-h1310-iv1',
+		'de_waag': 'https://lh3.google.com/u/0/d/0B8ZtUwTFS1gnc1BoUDJGM29IS3M=w2430-h1310-iv1'
+	};
+
+	var headers = {
+		'nam_kee': 'Restaurant Nam Kee',
+		'vincent': 'Vincent Kaas & Vlees',
+		'jacob': 'Jacob Hooy',
+		'he_hua': 'He Hua Temple',
+		'de_waag': 'De Waag'
+	};
+
+	var openings = {
+		'nam_kee': '12:00 - 23:00',
+		'vincent': '08:30 - 18:00',
+		'jacob': '10:00 - 18:00',
+		'he_hua': '',
+		'de_waag': 'Closing in 2 hours.'
+	};
+
+	var blurbs = {
+		'nam_kee': 'This chinese restaurant opened in 1981 and is a perfect representation of what Dutch Chinese cuisine is all about. They have traditional Chinese things on the menu but also have dishes on the menu that is a mixture of Dutch colonial cuisines. It became locally famous because of it’s steamed oyster dish and a Dutch renowned writer named Kees van Beijnum even wrote a fictional book in 2000 with the name of the restaurant in it’s title: “The oysters of Nam Kee”.',
+		'vincent': 'This Dutch traiteur or cheese and meat shop as the Dutch call it has a wide variety of  local cheeses and cured meats, but also sells non local products. Locals love to get a sandwich to go or take some cured meats home to enjoy during their breakfast.',
+		'jacob': 'In 1743 Jacob Hooy opened his spice shop on the Nieuwmarkt and until present day this store’s interior has been kept as much as possible as it was then. Today the store still sells spices and herbs but also has their own range of natural ingredient products ranging from beauty product, medicinal teas and gelatin free candy.',
+		'he_hua': 'Amsterdam Chinatown has the largest Chinese Mahayana Buddhist Monastery in Europe. This is the He Hua Temple, 荷花寺, is located in the Zeedijk area and also known as the Zeedijk Tempel or Chinese Buddhist Temple Amsterdam. The name He Hua Temple has double symbolic meaningsin Netherlands. He Hua, 荷花, is the Chinese name for lotus, a plant widely seen in Buddhist art.  At the same time, the Chinese character for “He”, “荷” is same character used in “Helan” 荷兰, the Chinese name for Netherlands.  This choice makes the name especially symbolic for the country and people.',
+		'de_waag': 'The Waag is a 15th-century building on Nieuwmarkt square in Amsterdam. It was originally a city gate and part of the walls of Amsterdam. The building has also served as a guildhall, museum, fire station and anatomical theatre, among others.'
+	};
+});
+</script>
+</body>
+</html>
