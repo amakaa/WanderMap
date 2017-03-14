@@ -1,4 +1,30 @@
 .icon {
 	width: 5%;
 	height: 5%;
+	position: absolute;
+}
+
+#dewaag {
+	left: 325px;
+	top: 225px;
+}
+
+#vincent {
+	left: 275px;
+	top: 175px;
+}
+
+#hooy {
+	left: 100px;
+	top: 500px;
+}
+
+#namkee {
+	left: 550px;
+	top: 175px;
+}
+
+#hehua {
+	left: 300px;
+	top: 10px;
 }
