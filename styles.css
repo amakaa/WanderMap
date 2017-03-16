@@ -1,5 +1,20 @@
 body{
 	font-family: 'Lato', sans-serif;
+	padding: 20px;
+}
+
+img{
+	max-width: 100%;
+}
+
+.left-column{
+	float: left;
+	width: 80%;
+}
+
+.right-column{
+	float: left;
+	width: 20%;
 }
 
 #card{
@@ -10,10 +25,18 @@ body{
 	background-image: url('resources/mapprint.png');
 	 background-repeat: no-repeat;
 }
+
+.icon-container{
+	position: absolute;
+}
+
 .icon {
 	width: 80px;
 	height: 80px;
-	position: absolute;
+}
+
+.icon-name{
+	display: none;
 }
 
 #dewaag {
@@ -39,4 +62,8 @@ body{
 #hehua {
 	left: 300px;
 	top: 10px;
+}
+
+#unfold-one, #fold-two, #unfold-two {
+	display: none;
 }
