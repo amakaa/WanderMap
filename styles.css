@@ -74,5 +74,31 @@ img{
 	display: none;
 }
 
+@keyframes changeme {
+  from {
+    width: 18px;
+	height: 18px;
+	border-radius: 18px;
+  }
+
+  to {
+    width: 20px;
+	height: 20px;
+	border-radius: 20px;
+  }
+}
+
+#me{
+	background-color: #ff7500;
+	position: absolute;
+	bottom: 50px;
+	left: 272px;
+	animation-duration: 0.5s;
+  	animation-name: changeme;
+  	animation-iteration-count: infinite;
+  	animation-direction: alternate;
+}
+
+
 
 
