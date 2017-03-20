@@ -39,15 +39,21 @@ img{
 .icon {
 	width: 80px;
 	height: 80px;
+	cursor: pointer;
 }
 
 .icon-name{
 	display: none;
+	position: absolute;
+	left: 86px;
+	top: 25px;
+	font-size: 18px;
+	width: 110px;
 }
 
 #dewaag {
-	left: 325px;
-	top: 225px;
+	left: 337px;
+	top: 243px;
 }
 
 #vincent {
@@ -76,29 +82,33 @@ img{
 
 @keyframes changeme {
   from {
-    width: 18px;
-	height: 18px;
-	border-radius: 18px;
+    width: 22px;
+	height: 22px;
+	border-radius: 22px;
   }
 
   to {
-    width: 20px;
-	height: 20px;
-	border-radius: 20px;
+    width: 25px;
+	height: 25px;
+	border-radius: 25px;
   }
 }
 
 #me{
 	background-color: #ff7500;
 	position: absolute;
-	bottom: 50px;
-	left: 272px;
+	bottom: 116px;
+	left: 501px;
 	animation-duration: 0.5s;
   	animation-name: changeme;
   	animation-iteration-count: infinite;
   	animation-direction: alternate;
 }
 
-
+.venue-container{
+	    width: 50%;
+    background-color: #f6f6f6;
+    padding: 20px;
+}
 
 

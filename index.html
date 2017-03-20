@@ -18,7 +18,7 @@
 				<span class="icon-name" >De Waag</span>
 			</div>
 			<div id="hooy" class="icon-container">
-				<img src="resources/icons/hooy.jpeg" alt="Hooy" class="icon" />
+				<img src="resources/icons/hooy.png" alt="Hooy" class="icon" />
 				<span class="icon-name" >Hooy</span>
 			</div>
 			<div id="namkee" class="icon-container">
@@ -38,13 +38,13 @@
 		<div class="back">
 			<div id="card-navigation">
 				<div class="front-two">
-					<div class="container">
+					<div class="venue-container">
 						<div class="image"></div>
 						<div class="header"></div>
 						<div class="opening-times"></div>
 						<div class="infos"></div>
 						<div class="blurb"></div>
-						</div>
+					</div>
 				</div>
 				<div class="back-two">
 					NAVIGATION IMAGE
@@ -54,10 +54,10 @@
 	</div>
 </div>
 <div class="right-column">
-	<span id="fold-one">FOLD</span>
-	<span id="unfold-one">UNFOLD</span>
-	<span id="fold-two">FOLD</span>
-	<span id="unfold-two">UNFOLD</span>
+	<span id="fold-one" class="fold">FOLD</span>
+	<span id="fold-two" class="fold" ">FOLD</span>
+	<span id="unfold-one" class="unfold">UNFOLD</span>
+	<span id="unfold-two" class="unfold">UNFOLD</span>
 </div>
 <script type="text/javascript">
 
@@ -107,7 +107,7 @@ $(function () {
 	$( ".icon-container" ).click(function() {
 		jQuery('.icon-name').hide();
 		var iconid = jQuery(this).attr("id");
-		$('#'+iconid).find('.icon-name').show();
+		$('#'+iconid).find('.icon-name').css('display','block');
 		$('.image').html('<img src="' + images[iconid] + '" />');
 		$('.header').html(headers[iconid]);
 		$('.opening-times').html(openings[iconid]);
