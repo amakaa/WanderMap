@@ -19,22 +19,27 @@
 			<div id="dewaag" class="icon-container">
 				<img src="resources/icons/dewaag.png" alt="De Waag" class="icon" >
 				<span class="icon-name" >De Waag</span>
+				<span class="icon-dist">2mins to get there</span>
 			</div>
 			<div id="jacob" class="icon-container">
 				<img src="resources/icons/jacob.png" alt="Hooy" class="icon" />
 				<span class="icon-name" >Jacob Hooy</span>
+				<span class="icon-dist">8mins to get there</span>
 			</div>
 			<div id="namkee" class="icon-container">
 				<img src="resources/icons/namkee.png" alt="Nam Kee" class="icon" />
 				<span class="icon-name" >Nam Kee</span>
+				<span class="icon-dist">6mins to get there</span>
 			</div>
 			<div id="vincent" class="icon-container">
 				<img src="resources/icons/vincentkaas.png" alt="Vincent Kaas" class="icon" />
 				<span class="icon-name">Vincent Kaas</span>
+				<span class="icon-dist">4min walk</span>
 			</div>
 			<div id="hehua" class="icon-container">
 				<img src="resources/icons/hehua.png" alt="He Hua" class="icon" />
 				<span class="icon-name" >He Hua</span>
+				<span class="icon-dist">8mins to get there</span>
 			</div>
 			<div id="me"><img src="resources/icons/purpleFeet.png" alt="He Hua" /></div>	
 		</div>
@@ -76,6 +81,7 @@ $( document ).ready(function() {
 });
 
 $( "#fold-one" ).click(function() {
+	$('.hidden').hide();
 	$("#card").flip(true);
 	$(this).hide();
 	$("#unfold-one").show();
@@ -83,6 +89,7 @@ $( "#fold-one" ).click(function() {
 });
 
 $( "#unfold-one" ).click(function() {
+	$('.hidden').show().removeClass('hidden');
 	$("#card").flip(false);
 	$(this).hide();
 	$("#fold-two").hide();
@@ -117,6 +124,11 @@ $(function () {
 		}
 		
 		$('#'+iconid).find('.icon-name').css('display','block');
+		$('.icon-name').hide();
+		$('.icon-dist').hide();
+		var iconid = jQuery(this).attr("id");
+		$('#'+iconid).find('.icon-name').css('display','block').addClass('hidden');
+		$('#'+iconid).find('.icon-dist').css('display','block').addClass('hidden');
 		$('.image').html('<img src="' + images[iconid] + '" />');
 		$('.header').html(headers[iconid]);
 		$('.opening-times').html(openings[iconid]);
