@@ -51,6 +51,12 @@ img{
 	width: 110px;
 }
 
+#logo {
+	left: 20px;
+	top: 20px;
+	width: 300px;
+}
+
 #dewaag {
 	left: 337px;
 	top: 243px;
@@ -72,7 +78,7 @@ img{
 }
 
 #hehua {
-	left: 300px;
+	left: 320px;
 	top: 10px;
 }
 
