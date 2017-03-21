@@ -84,6 +84,8 @@ $( document ).ready(function() {
 
 $( "#fold-one" ).click(function() {
 	$('.hide').hide();
+	$('.icon-name').hide();
+	$('.icon-dist').hide();
 	$("#card").flip(true);
 	$(this).hide();
 	$("#unfold-one").show();
@@ -91,7 +93,7 @@ $( "#fold-one" ).click(function() {
 });
 
 $( "#unfold-one" ).click(function() {
-	$('.hide').show().removeClass('hide');
+	$('.hide').show();
 	$("#card").flip(false);
 	$(this).hide();
 	$("#fold-two").hide();
