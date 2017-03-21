@@ -115,7 +115,7 @@ img{
 #me{
 	position: absolute;
 	bottom: 220px;
-	left: 400px;
+	left: 445px;
 	animation-duration: 0.5s;
   	animation-name: changeme;
   	animation-iteration-count: infinite;
@@ -143,6 +143,14 @@ padding-bottom: 10px;
 color: #d55a00;
 }
 
+.controls{
+padding: 10px;
+border: 2px solid;
+float: left;
+width: 85%;
+}
+
+
 .fold , .unfold{
 	font-size: 20px;
 	text-align: center;
@@ -150,7 +158,6 @@ color: #d55a00;
 	width: 40%;
 	cursor: pointer;
 	color: #fff;
-	margin-bottom:20px; 
 }
 
 .fold{
@@ -161,5 +168,10 @@ color: #d55a00;
 .unfold{
 	float: right;
 	background-color: #2CAF9F;
+}
+
+.control-label{
+	padding-bottom: 12px;
+	display: block;
 }
 
