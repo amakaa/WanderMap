@@ -123,9 +123,13 @@ img{
 }
 
 .venue-container , .nav-route{
-	    width: 50%;
+	width: 50%;
     background-color: #f6f6f6;
     padding: 20px;
+}
+
+.venue-container {
+	height: 550px;
 }
 
 .header{
