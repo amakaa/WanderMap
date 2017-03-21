@@ -1,7 +1,10 @@
 /* FONT */
 @font-face {
-    font-family: Avenir Next;
-    src: url(/resources/font/AvenirNextLTPro-Regular.otf);
+    font-family: 'Avenir Next';
+    src: url(/resources/font/AvenirNextLTPro-Regular.otf),
+    	url(/resources/font/AvenirNextLTPro-BoldCn.otf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{
@@ -46,9 +49,18 @@ img{
 	display: none;
 	position: absolute;
 	left: 86px;
-	top: 25px;
+	top: 5px;
 	font-size: 18px;
-	width: 110px;
+	width: 150px;
+	font-weight: bold;
+}
+
+.icon-dist{
+	display: none;
+	position: absolute;
+	left: 86px;
+	top: 30px;
+	width: 150px;
 }
 
 #dewaag {
@@ -134,11 +146,11 @@ color: #d55a00;
 
 .fold{
 	float: left;
-	background-color: #089bf9;
+	background-color: #7A4B9E;
 }
 
 .unfold{
 	float: right;
-	background-color: #f99008;
+	background-color: #2CAF9F;
 }
 
