@@ -77,6 +77,10 @@
 		<div id="unfold-one" class="unfold">UNFOLD</div>
 		<div id="unfold-two" class="unfold">UNFOLD</div>
 	</div>
+	<div class="fold-icon">
+		<img id="icon-fold-one" src="resources/icons/fold1.png">
+		<img id="icon-fold-two" src="resources/icons/fold2.png">
+	</div>
 </div>
 <script type="text/javascript">
 
@@ -99,6 +103,8 @@ $( "#fold-one" ).click(function() {
 	$(this).hide();
 	$("#unfold-one").show();
 	$("#fold-two").show();
+	$("#icon-fold-one").hide();
+	$("#icon-fold-two").show();
 });
 
 $( "#unfold-one" ).click(function() {
@@ -106,7 +112,9 @@ $( "#unfold-one" ).click(function() {
 	$("#card").flip(false);
 	$(this).hide();
 	$("#fold-two").hide();
-	$( "#fold-one").show();
+	$("#fold-one").show();
+	$("#icon-fold-one").show();
+	$("#icon-fold-two").hide();
 });
 
 $( "#fold-two" ).click(function() {
@@ -115,6 +123,7 @@ $( "#fold-two" ).click(function() {
 	$(this).hide();
 	$("#unfold-one").hide();
 	$("#unfold-two").show();
+	$("#icon-fold-two").hide();
 });
 
 $( "#unfold-two" ).click(function() {
@@ -123,6 +132,7 @@ $( "#unfold-two" ).click(function() {
 	$(this).hide();
 	$("#unfold-one").show();
 	$( "#fold-two").show();
+	$("#icon-fold-two").show();
 });
 
 

@@ -205,3 +205,13 @@ float: left;
 padding-top: 20px;
 margin-left: 15%;
 }
+
+.fold-icon img{
+	width: 50%;
+	margin-top: 20px;
+}
+
+#icon-fold-two{
+	width: 33%;
+	display: none;
+}
