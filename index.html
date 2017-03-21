@@ -117,11 +117,7 @@ $(function () {
 	$( ".icon-container" ).click(function() {
 		jQuery('.icon-name').hide();
 
-		if (jQuery(this).attr("id") === null) {
-			var iconid = 'amsterdam';
-		} else {
-			var iconid = jQuery(this).attr("id");
-		}
+		var iconid = jQuery(this).attr("id");
 		
 		$('#'+iconid).find('.icon-name').css('display','block');
 		$('.icon-name').hide();
