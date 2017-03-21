@@ -81,7 +81,7 @@ $( document ).ready(function() {
 });
 
 $( "#fold-one" ).click(function() {
-	$('.hidden').hide();
+	$('.hide').hide();
 	$("#card").flip(true);
 	$(this).hide();
 	$("#unfold-one").show();
@@ -89,7 +89,7 @@ $( "#fold-one" ).click(function() {
 });
 
 $( "#unfold-one" ).click(function() {
-	$('.hidden').show().removeClass('hidden');
+	$('.hide').show().removeClass('hide');
 	$("#card").flip(false);
 	$(this).hide();
 	$("#fold-two").hide();
@@ -127,8 +127,8 @@ $(function () {
 		$('.icon-name').hide();
 		$('.icon-dist').hide();
 		var iconid = jQuery(this).attr("id");
-		$('#'+iconid).find('.icon-name').css('display','block').addClass('hidden');
-		$('#'+iconid).find('.icon-dist').css('display','block').addClass('hidden');
+		$('#'+iconid).find('.icon-name').addClass('hide').css('display','block');
+		$('#'+iconid).find('.icon-dist').addClass('hide').css('display','block');
 		$('.image').html('<img src="' + images[iconid] + '" />');
 		$('.header').html(headers[iconid]);
 		$('.opening-times').html(openings[iconid]);
