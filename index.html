@@ -97,6 +97,7 @@ $( "#unfold-one" ).click(function() {
 });
 
 $( "#fold-two" ).click(function() {
+	$('.hide').hide();
 	$("#card-navigation").flip(true);
 	$(this).hide();
 	$("#unfold-one").hide();
@@ -104,6 +105,7 @@ $( "#fold-two" ).click(function() {
 });
 
 $( "#unfold-two" ).click(function() {
+	$('.hide').hide();
 	$("#card-navigation").flip(false);
 	$(this).hide();
 	$("#unfold-one").show();
@@ -120,8 +122,8 @@ $(function () {
 		var iconid = jQuery(this).attr("id");
 		
 		$('#'+iconid).find('.icon-name').css('display','block');
-		$('.icon-name').hide();
-		$('.icon-dist').hide();
+		$('.icon-name').removeClass('hide').hide();
+		$('.icon-dist').removeClass('hide').hide();
 		var iconid = jQuery(this).attr("id");
 		$('#'+iconid).find('.icon-name').addClass('hide').css('display','block');
 		$('#'+iconid).find('.icon-dist').addClass('hide').css('display','block');
