@@ -59,7 +59,9 @@
 				</div>
 				<div class="back-two">
 					<div class="weather-default">
-						<img src="resources/">
+						<span>Hi Peter</span>
+						<div>The temprature in Asmterdam is 10 degrees and there is possibility 90% to rain</div>
+						<img src="resources/icons/rain.png">
 					</div>
 					<img class="nav-route" src="resources/navigation.jpg">
 				</div>
@@ -129,7 +131,10 @@ $(function () {
 
 	$( ".icon-container" ).click(function() {
 		jQuery('.icon-name').hide();
-
+		
+		jQuery('.weather-default').hide();
+		jQuery('.nav-route').show();
+		
 		var iconid = jQuery(this).attr("id");
 		
 		$('#'+iconid).find('.icon-name').css('display','block');
