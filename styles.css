@@ -108,8 +108,8 @@ img{
 
 #me{
 	position: absolute;
-	bottom: 116px;
-	left: 501px;
+	bottom: 220px;
+	left: 400px;
 	animation-duration: 0.5s;
   	animation-name: changeme;
   	animation-iteration-count: infinite;
